@@ -4,13 +4,13 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  names.collect do |name|
+  names.map do |name|
     badge_maker(name)
   end
 end
 
 def assign_rooms(names)
-  names.each_with_index.map do |name, number|
+  names.map.with_index do |name, number|
     "Hello, #{name}! You'll be assigned to room #{number + 1}!"
   end
 end
