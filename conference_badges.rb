@@ -10,5 +10,7 @@ end
 
 def assign_rooms
   room_number = 1 
-  attendees.collect do |
+  attendees.collect do |name|
+    room_number += 1 
+    ""
 end
