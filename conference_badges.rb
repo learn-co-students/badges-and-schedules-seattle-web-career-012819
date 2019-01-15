@@ -9,5 +9,6 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms
-  
+  room_number = 1 
+  attendees.collect do |
 end
